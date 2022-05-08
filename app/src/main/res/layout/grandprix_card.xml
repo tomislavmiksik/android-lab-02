@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@android:color/black"
+        android:clickable="true">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        <ImageView
+                android:id="@+id/grandprix_image"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/flag"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp">
+
+        </ImageView>
+
+        <TableLayout
+                android:id="@+id/content_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/grandprix_image">
+
+            <TextView
+                    android:id="@+id/grandprix_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_margin="20dp" />
+
+            <TextView
+                    android:id="@+id/grandprix_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
