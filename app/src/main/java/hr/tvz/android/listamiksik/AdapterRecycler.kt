@@ -17,52 +17,52 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Bahrain Grand Prix",
             "20th of March",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             true,
-            podium = arrayListOf("Leclerc", "Sainz", "Hamilton"),
+            "Leclerc, Sainz, Hamilton",
             R.drawable.bahrain,
             R.drawable.bahrain_layout
         ),
         GrandPrix(
             "Saudi Arabian Grand Prix",
             "27th of March",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             true,
-            podium = arrayListOf("Leclerc", "Sainz", "Hamilton"),
+            "Verstappen, Leclerc, Sainz",
             R.drawable.saudi,
             R.drawable.saudi_layout
         ),
         GrandPrix(
             "Australian Grand Prix",
             "10th of April",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             true,
-            podium = arrayListOf("Leclerc", "Sainz", "Hamilton"),
+            "Leclerc, Perez, Russell",
             R.drawable.australia,
             R.drawable.australia_layout
         ),
         GrandPrix(
             "Emilia Romagna Grand Prix",
             "24th of April",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             true,
-            podium = arrayListOf("Leclerc", "Sainz", "Hamilton"),
+            "Verstappen, Leclerc, Norris",
             R.drawable.italy,
             R.drawable.italy_imola_layout
         ),
         GrandPrix(
             "Miami Grand Prix",
             "8th of May",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             true,
-            podium = arrayListOf("Leclerc", "Sainz", "Hamilton"),
+            "Verstappen, Leclerc, Sainz",
             R.drawable.us,
             R.drawable.us_miami_layout
         ),
         GrandPrix(
             "Catalunya Grand Prix",
             "22nd of May",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.spain,
@@ -71,7 +71,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Monaco Grand Prix",
             "27th of May",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.monaco,
@@ -80,7 +80,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Azerbaijan Grand Prix",
             "12th of June",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.azerbaijan,
@@ -89,7 +89,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Canadian Grand Prix",
             "19th of June",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.canada,
@@ -98,7 +98,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Silverstone Grand Prix",
             "3rd of July",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.uk,
@@ -107,7 +107,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Austrian Grand Prix",
             "10th of July",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.austria,
@@ -116,7 +116,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "French Grand Prix",
             "24th of July",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.france,
@@ -125,7 +125,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Hungarian Grand Prix",
             "31st of July",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.hungary,
@@ -134,7 +134,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Belgian Grand Prix",
             "28th of August",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.belgium,
@@ -143,7 +143,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Dutch Grand Prix",
             "4th of September",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.netherlands,
@@ -152,7 +152,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Italian Grand Prix",
             "11th of September",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.italy,
@@ -161,7 +161,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Singapore Grand Prix",
             "2nd of October",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.singapore,
@@ -170,7 +170,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Japanese Grand Prix",
             "9th of October",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.japan,
@@ -179,7 +179,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "US Grand Prix",
             "23rd of October",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.us,
@@ -188,7 +188,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Mexican Grand Prix",
             "30th of October",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.mexico,
@@ -197,7 +197,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Brazilian Grand Prix",
             "13th of November",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.brazil,
@@ -206,7 +206,7 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         GrandPrix(
             "Abu Dhabi Grand Prix",
             "20th of November",
-            sessions = arrayListOf("FP1", "FP2", "FP3", "Q", "R"),
+            "FP1, FP2, FP3, Q, R",
             false,
             null,
             R.drawable.uae,

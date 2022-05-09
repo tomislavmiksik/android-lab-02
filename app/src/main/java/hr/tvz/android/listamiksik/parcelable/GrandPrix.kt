@@ -8,9 +8,9 @@ import java.util.*
 class GrandPrix(
     var name : String,
     var date : String,
-    var sessions: List<String>,
+    var sessions: String,
     var completed: Boolean,
-    var podium: List<String>?,
+    var podium: String?,
     var flag: Int,
     var layout: Int,
 ) : Parcelable {}

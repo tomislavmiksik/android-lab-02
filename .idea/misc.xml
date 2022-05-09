@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Dev/ListaMiksik/app/src/main/res/drawable/arrow_forward_ios-48px.xml" value="0.2495" />
+        <entry key="..\:/Dev/ListaMiksik/app/src/main/res/drawable/share-48px.xml" value="0.1935" />
         <entry key="..\:/Dev/ListaMiksik/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Dev/ListaMiksik/app/src/main/res/layout/grandprix_card.xml" value="0.25" />
         <entry key="..\:/Dev/ListaMiksik/app/src/main/res/layout/grandprix_detail.xml" value="0.358695652173913" />
+        <entry key="..\:/Dev/ListaMiksik/app/src/main/res/layout/grandprix_image.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>

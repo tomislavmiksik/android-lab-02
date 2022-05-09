@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="airplanemode">" Flugmodus geändert"</string>
+    <string name="flag">Flagge</string>
+    <string name="layout">Layout</string>
+    <string name="share">Teilen</string>
+    <string name="openWebsite">" Klick hier um mehr zu erfahren"</string>
+    <string name="app_name">ListaMiksik</string>
+    <string name="share_dialog">
+Sind Sie sicher, dass Sie den Inhalt teilen möchten?</string>
+</resources>

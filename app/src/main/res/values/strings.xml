@@ -3,4 +3,7 @@
     <string name="flag">flag</string>
     <string name="share">Share</string>
     <string name="layout">layout</string>
+    <string name="openWebsite">Click here to learn more</string>
+    <string name="airplanemode">Airplane mode switched</string>
+    <string name="share_dialog">Are you sure you want to share the content</string>
 </resources>

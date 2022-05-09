@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="FullScreenImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name = "android:layout_height">500dp</item>
+        <item name = "android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="GeneralTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="LinkToBrowserText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/teal_200</item>
+    </style>
+</resources>

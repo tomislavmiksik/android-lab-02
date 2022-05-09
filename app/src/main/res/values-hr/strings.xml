@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="airplanemode">Zrakoplovni nacin promijenjen</string>
+    <string name="flag">zastava</string>
+    <string name="layout">layout</string>
+    <string name="share">Podijeli</string>
+    <string name="openWebsite">Kliknite ovdje za vise informacija</string>
+    <string name="app_name">ListaMiksik</string>
+    <string name="share_dialog">
+Jeste li sigurni da želite podijeliti sadržaj</string>
+</resources>
