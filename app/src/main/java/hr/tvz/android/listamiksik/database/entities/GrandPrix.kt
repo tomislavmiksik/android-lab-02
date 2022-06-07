@@ -11,5 +11,7 @@ data class GrandPrix(
     @ColumnInfo(name = "date") val date: String,
     @ColumnInfo(name = "sesions") val location: String,
     @ColumnInfo(name = "completed") val completed: String,
-    @ColumnInfo(name = "podium") val podium: String
+    @ColumnInfo(name = "podium") val podium: String,
+    @ColumnInfo(name = "flag") val flag: Int,
+    @ColumnInfo(name = "layout") val layout: Int
 )
