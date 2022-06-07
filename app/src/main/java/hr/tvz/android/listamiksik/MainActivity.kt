@@ -1,7 +1,6 @@
 package hr.tvz.android.listamiksik
 
 import android.os.Bundle
-import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,16 +31,6 @@ class MainActivity :  AppCompatActivity(), ItemListFragment.Callbacks, ShowableA
         noteViewModel!!.getAllGrandPrix().observe(this
         ) { notes -> adapter.setGrandPrixs(notes) }
 
-        if (findViewById<FrameLayout>(R.id.item_detail_container) != null) {
-            landscape = true
-        } else {
-            landscape = false
-            var itemListFragment = ItemListFragment()
-            supportFragmentManager
-                .beginTransaction()
-                .add(R.id.list_detail, itemListFragment)
-                .commit()
-        }
     }
 
     override fun onItemSelected(id: String?) {
