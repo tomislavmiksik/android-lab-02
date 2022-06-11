@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import hr.tvz.android.listamiksik.database.GrandPrixDatabase
 import hr.tvz.android.listamiksik.database.entities.GrandPrix
 import hr.tvz.android.listamiksik.database.repos.GrandPrixRepository
 import kotlinx.coroutines.launch
@@ -25,8 +24,15 @@ class GrandPrixViewModel (application: Application) : AndroidViewModel(applicati
         repository.update(grandPrix)
     }
 
+
+
     @JvmName("getAllGrandPrix1")
     fun getAllGrandPrix(): LiveData<List<GrandPrix>> {
         return allGrandPrix
+    }
+
+    @JvmName("getGrandPrixById1")
+    fun getGrandPrixById(id: Int): GrandPrix{
+        return repository.getById(id)
     }
 }

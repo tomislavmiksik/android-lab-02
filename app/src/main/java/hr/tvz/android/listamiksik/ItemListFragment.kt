@@ -5,17 +5,16 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ListView
 import androidx.fragment.app.ListFragment
-import hr.tvz.android.listamiksik.database.entities.GrandPrix
+import androidx.lifecycle.ViewModelProvider
 import hr.tvz.android.listamiksik.database.viewmodel.GrandPrixViewModel
+
 
 class ItemListFragment : ListFragment() {
 
-    private var columnCount = 1
     private val STATE_ACTIVATED_POSITION = "activated_position"
     private var mActivatedPosition = ListView.INVALID_POSITION
-    private lateinit var adapter: GrandPrixAdapter
-    private lateinit var vm: GrandPrixViewModel
-    lateinit var grandPrixList: MutableList<GrandPrix>
+    private var grandPrixViewModel: GrandPrixViewModel? = null
+
     interface Callbacks {
         fun onItemSelected(id: String?)
     }
@@ -28,15 +27,48 @@ class ItemListFragment : ListFragment() {
     private var mCallbacks: Callbacks = sDummyCallbacks
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        grandPrixViewModel = ViewModelProvider(this).get(GrandPrixViewModel::class.java)
+
+        grandPrixViewModel!!.getAllGrandPrix().observe(
+            this,
+            androidx.lifecycle.Observer { grandPrixList ->
+                val grandPrixNameList = grandPrixList.map { it.name }.toMutableList()
+                listAdapter = GrandPrixAdapterV2(
+                    requireActivity(),
+                    R.layout.grandprix_card,
+                    grandPrixList
+                )
+            }
+        )
+
+//        listAdapter = ArrayAdapter(
+//            requireActivity(),
+//            R.layout.grandprix_card,
+//            R.id.name,
+//            grandPrixList
+//        )
     }
+    override fun onListItemClick(l: ListView, v: View, position: Int, id: Long) {
+        super.onListItemClick(l, v, position, id)
+        print("onListItemClick")
+
+        grandPrixViewModel = ViewModelProvider(this).get(GrandPrixViewModel::class.java)
+
+        grandPrixViewModel!!.getAllGrandPrix().observe(
+            this,
+            androidx.lifecycle.Observer { grandPrixList ->
+                mCallbacks.onItemSelected(grandPrixList[position].id.toString())
+            }
+        )
+
+
+    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        // Restore the previously serialized activated item position
         if (savedInstanceState != null && savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)) {
             setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION))
         }
@@ -65,6 +97,7 @@ class ItemListFragment : ListFragment() {
         super.onDetach()
         mCallbacks = sDummyCallbacks
     }
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
 

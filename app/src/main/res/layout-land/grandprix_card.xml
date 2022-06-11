@@ -7,7 +7,6 @@
         app:cardCornerRadius="0dp"
         app:cardBackgroundColor="@android:color/black"
     android:id="@+id/card_view"
-    style="@style/CardView"
         android:clickable="true">
 
 

@@ -45,9 +45,9 @@ class GrandPrixAdapter : RecyclerView.Adapter<GrandPrixAdapter.GrandPrixHolder>(
         val grandprixDate: TextView
 
         init {
-            itemImage = itemView.findViewById(R.id.grandprix_image)
-            itemName = itemView.findViewById(R.id.grandprix_name)
-            grandprixDate = itemView.findViewById(R.id.grandprix_date)
+            itemImage = itemView.findViewById(R.id.item_image)
+            itemName = itemView.findViewById(R.id.text1)
+            grandprixDate = itemView.findViewById(R.id.text2)
         }
     }
 

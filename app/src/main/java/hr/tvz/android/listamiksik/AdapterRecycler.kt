@@ -221,9 +221,9 @@ class AdapterRecycler : RecyclerView.Adapter<AdapterRecycler.ViewHolder>() {
         val grandprixDate: TextView
 
         init {
-            itemImage = itemView.findViewById(R.id.grandprix_image)
-            itemName = itemView.findViewById(R.id.grandprix_name)
-            grandprixDate = itemView.findViewById(R.id.grandprix_date)
+            itemImage = itemView.findViewById(R.id.item_image)
+            itemName = itemView.findViewById(R.id.text1)
+            grandprixDate = itemView.findViewById(R.id.text2)
 
             itemView.setOnClickListener {
                 val position = adapterPosition

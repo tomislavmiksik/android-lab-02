@@ -12,6 +12,7 @@ class GrandPrixRepository (application: Application){
     private var grandPrixDao: GrandPrixDao
     private var allGrandPrixs: LiveData<List<GrandPrix>>
 
+
     private val database = GrandPrixDatabase.getInstance(application)
 
     init {
@@ -39,6 +40,10 @@ class GrandPrixRepository (application: Application){
 
     fun getAll(): LiveData<List<GrandPrix>> {
         return allGrandPrixs
+    }
+
+    fun getById(id: Int): GrandPrix {
+        return grandPrixDao.getById(id)
     }
 
 }
